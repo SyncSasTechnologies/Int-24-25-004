@@ -1,0 +1,100 @@
+/* Reset default margins and paddings */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: url('https://www.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-600nw-1725825019.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; /* Ensure full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    color: white;
+  }
+  
+  h1 { 
+    font-size: 3em; 
+    margin-bottom: 20px; 
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  input { 
+    width: 250px; 
+  }
+  button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover { 
+    background-color: #2980b9; 
+  }
+  
+  /* Weather container styles */
+  #weather-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 350px;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(52, 152, 219, 0.8); /* Light Blue */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center the text */
+  }
+  
+  #weather-container.sunny { 
+    background-color: #f39c12; 
+  }
+  #weather-container.rainy { 
+    background-color: #3498db; 
+  }
+  #weather-container.cloudy { 
+    background-color: #95a5a6; 
+  }
+  #weather-container.snowy { 
+    background-color: #ecf0f1; 
+  }
+  
+  #weather-container h2 { 
+    color: #fff; 
+    font-size: 24px; 
+    margin-bottom: 10px; 
+  }
+  
+  #weather-container p {
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  #weather-container img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  #error-message { 
+    color: #e74c3c; 
+    font-size: 16px; 
+    margin-top: 20px; 
+  }
